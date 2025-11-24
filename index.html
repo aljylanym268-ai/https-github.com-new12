@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>أنا مسلم - أذكار وأدعية</title>
+  <title>الرحمن - أذكار وأدعية</title>
   <style>
     * {
       margin: 0;
@@ -11,20 +11,18 @@
       box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
     body {
       background-color: #f9f9f9;
       padding: 20px;
       color: #333;
     }
-
     .welcome-screen {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, #00994C, #007A3D);
+      background: linear-gradient(135deg, #8B4513, #A0522D);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -32,31 +30,26 @@
       z-index: 3000;
       transition: transform 0.8s ease, opacity 0.8s ease;
     }
-
     .welcome-content {
       text-align: center;
       color: white;
       padding: 20px;
       max-width: 500px;
     }
-
     .welcome-logo {
       font-size: 80px;
       margin-bottom: 20px;
     }
-
     .welcome-title {
       font-size: 36px;
       margin-bottom: 15px;
       font-weight: bold;
     }
-
     .welcome-subtitle {
       font-size: 18px;
       margin-bottom: 10px;
       line-height: 1.6;
     }
-
     .personal-greeting {
       font-size: 22px;
       margin-bottom: 20px;
@@ -66,10 +59,9 @@
       border-radius: 30px;
       display: inline-block;
     }
-
     .start-btn {
       background: white;
-      color: #00994C;
+      color: #8B4513;
       border: none;
       padding: 15px 40px;
       border-radius: 30px;
@@ -79,12 +71,10 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-
     .start-btn:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(0,0,0,0.25);
     }
-
     .header {
       display: flex;
       justify-content: space-between;
@@ -95,17 +85,15 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
       margin-bottom: 20px;
     }
-
     .app-info {
       display: flex;
       align-items: center;
       gap: 12px;
     }
-
     .app-logo {
       width: 60px;
       height: 60px;
-      background: linear-gradient(135deg, #00994C, #007A3D);
+      background: linear-gradient(135deg, #8B4513, #A0522D);
       border-radius: 15px;
       display: flex;
       align-items: center;
@@ -114,23 +102,13 @@
       color: white;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     .app-name {
       font-size: 20px;
       font-weight: bold;
       color: #333;
     }
-
-    .google-play {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      color: #555;
-      font-size: 14px;
-    }
-
     .counter-btn {
-      background: linear-gradient(135deg, #008040, #006633);
+      background: linear-gradient(135deg, #8B4513, #A0522D);
       color: white;
       border: none;
       padding: 10px 20px;
@@ -140,18 +118,15 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     .counter-btn:hover {
       transform: scale(1.05);
     }
-
     .main-container {
       background: white;
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
-
     .section-title {
       text-align: center;
       margin-bottom: 20px;
@@ -159,25 +134,22 @@
       color: #333;
       position: relative;
     }
-
     .section-title::after {
       content: '';
       display: block;
       width: 50px;
       height: 3px;
-      background: linear-gradient(90deg, #008040, #006633);
+      background: linear-gradient(90deg, #8B4513, #A0522D);
       margin: 10px auto;
       border-radius: 3px;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 15px;
     }
-
     .card {
-      background: linear-gradient(135deg, #00b36b, #00994C);
+      background: linear-gradient(135deg, #A0522D, #8B4513);
       border-radius: 15px;
       padding: 15px;
       text-align: center;
@@ -189,17 +161,15 @@
       color: white;
       position: relative;
     }
-
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
-
     .counter-badge {
       position: absolute;
       top: -8px;
       left: -8px;
-      background: #ff5722;
+      background: #D2691E;
       color: white;
       border-radius: 50%;
       width: 25px;
@@ -210,7 +180,6 @@
       font-size: 12px;
       font-weight: bold;
     }
-
     .azkar-content {
       display: none;
       background: #fff;
@@ -223,34 +192,30 @@
       font-size: 17px;
       color: #222;
     }
-
     .azkar-content h3 {
-      color: #006633;
+      color: #8B4513;
       text-align: center;
       margin-bottom: 20px;
       font-size: 22px;
-      border-bottom: 2px solid #e0f0e9;
+      border-bottom: 2px solid #f5e9df;
       padding-bottom: 10px;
     }
-
     .azkar-item {
       margin-bottom: 20px;
       text-align: center;
       font-weight: normal;
       font-size: 18px;
-      color: #1a5d38;
+      color: #5D4037;
       padding: 15px;
       border-radius: 10px;
-      background-color: #f0f8f4;
+      background-color: #f9f1eb;
       transition: all 0.3s ease;
       position: relative;
     }
-
     .azkar-item:hover {
-      background-color: #e0f0e9;
+      background-color: #f5e9df;
       transform: scale(1.01);
     }
-
     .azkar-counter {
       display: flex;
       justify-content: center;
@@ -258,9 +223,8 @@
       margin-top: 15px;
       gap: 10px;
     }
-
     .counter-display {
-      background: #008040;
+      background: #8B4513;
       color: white;
       padding: 5px 15px;
       border-radius: 20px;
@@ -269,9 +233,8 @@
       text-align: center;
       transition: opacity 0.3s ease;
     }
-
     .increase-btn {
-      background: #ff5722;
+      background: #D2691E;
       color: white;
       border: none;
       padding: 8px 15px;
@@ -280,21 +243,18 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
-
     .increase-btn:hover {
-      background: #e64a19;
+      background: #A0522D;
       transform: scale(1.05);
     }
-
     .completion-message {
-      color: #008040;
+      color: #8B4513;
       font-weight: bold;
       margin-top: 10px;
       text-align: center;
       opacity: 0;
       transition: opacity 0.5s ease;
     }
-
     .repeat-counter {
       display: flex;
       justify-content: center;
@@ -302,12 +262,10 @@
       margin-top: 10px;
       gap: 10px;
     }
-
     .repeat-label {
       font-size: 14px;
       color: #555;
     }
-
     .repeat-input {
       width: 50px;
       text-align: center;
@@ -315,12 +273,11 @@
       border: 1px solid #ddd;
       border-radius: 5px;
     }
-
     .back-btn {
       display: block;
       width: fit-content;
       margin: 20px auto 0;
-      background: linear-gradient(135deg, #008040, #006633);
+      background: linear-gradient(135deg, #8B4513, #A0522D);
       color: white;
       padding: 10px 30px;
       border-radius: 25px;
@@ -330,16 +287,14 @@
       border: none;
       cursor: pointer;
     }
-
     .back-btn:hover {
       transform: scale(1.05);
     }
-
     .scroll-to-top {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: rgba(0,0,0,0.7);
+      background: rgba(139, 69, 19, 0.7);
       color: white;
       width: 50px;
       height: 50px;
@@ -355,12 +310,10 @@
       opacity: 0;
       pointer-events: none;
     }
-
     .scroll-to-top:hover {
-      background: #008040;
+      background: #8B4513;
       transform: scale(1.1);
     }
-
     .counter-modal {
       display: none;
       position: fixed;
@@ -373,7 +326,6 @@
       align-items: center;
       justify-content: center;
     }
-
     .counter-content {
       background: white;
       padding: 30px;
@@ -383,32 +335,27 @@
       text-align: center;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
-
     .counter-content h3 {
-      color: #006633;
+      color: #8B4513;
       margin-bottom: 20px;
     }
-
     .counter-list {
       max-height: 300px;
       overflow-y: auto;
       margin-bottom: 20px;
       text-align: right;
     }
-
     .counter-item {
       padding: 10px;
       border-bottom: 1px solid #eee;
       display: flex;
       justify-content: space-between;
     }
-
     .counter-item:last-child {
       border-bottom: none;
     }
-
     .close-counter {
-      background: linear-gradient(135deg, #008040, #006633);
+      background: linear-gradient(135deg, #8B4513, #A0522D);
       color: white;
       border: none;
       padding: 10px 20px;
@@ -417,11 +364,9 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
-
     .close-counter:hover {
       transform: scale(1.05);
     }
-
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: 1fr;
@@ -446,32 +391,25 @@
   </style>
 </head>
 <body>
-
   <!-- واجهة الترحيب -->
   <div class="welcome-screen" id="welcome-screen">
     <div class="welcome-content">
       <div class="welcome-logo">🕌</div>
-      <h1 class="welcome-title">أنا مسلم</h1>
+      <h1 class="welcome-title">الرحمن</h1>
       <div class="personal-greeting">محمد سعد يرحب بكم</div>
       <p class="welcome-subtitle">تطبيق الأذكار والأدعية الشاملة الذي يساعدك على تذكر الله في كل وقت وحين</p>
       <button class="start-btn" id="start-btn">ابدأ الآن</button>
     </div>
   </div>
-
   <div class="header">
     <div class="app-info">
       <div class="app-logo">🕌</div>
       <div>
-        <div class="app-name">أنا مسلم</div>
-        <div class="google-play">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzQyODVmNCIgZD0iTTEyIDBoLTEuNDlsLTQuMTctNC4xN2MtMS4wMi0xLjAyLTIuNjktMS4wMi0zLjcxIDBsLTQuMTcgNC4xN2MtMS4wMiAxLjAyLTEuMDIgMi42OSAwIDMuNzFMMTAgMTEuNDlIMTIgMjR6Ii8+PC9zdmc+" alt="Google Play" />
-          Google Play
-        </div>
+        <div class="app-name">الرحمن</div>
       </div>
     </div>
     <button class="counter-btn" id="counter-btn">عرف كام قرات</button>
   </div>
-
   <div class="main-container">
     <h2 class="section-title">أذكار وأدعية</h2>
     <div class="grid" id="cards-grid">
@@ -572,16 +510,13 @@
         دعاء الاستسقاء
       </div>
     </div>
-
     <div class="azkar-content" id="azkar-content">
       <h3 id="azkar-title"></h3>
       <div id="azkar-text"></div>
       <button class="back-btn" id="back-btn">العودة للقائمة</button>
     </div>
   </div>
-
   <div class="scroll-to-top">↑</div>
-
   <!-- نافذة عرض العداد -->
   <div class="counter-modal" id="counter-modal">
     <div class="counter-content">
@@ -590,7 +525,6 @@
       <button class="close-counter" id="close-counter">إغلاق</button>
     </div>
   </div>
-
   <script>
     const azkarData = {
       sabah: {
@@ -616,7 +550,6 @@
           {text: "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ.", count: 3}
         ]
       },
-
       msaa: {
         title: "أذكار المساء (من بعد العصر إلى قبل الفجر)",
         text: [
@@ -639,7 +572,6 @@
           {text: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ.", count: 3}
         ]
       },
-
       nom: {
         title: "أذكار النوم",
         text: [
@@ -657,7 +589,6 @@
           {text: "اللَّهُمَّ أَسْلَمْتُ وَجْهِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ.", count: 1}
         ]
       },
-
       istiqaz: {
         title: "أذكار الاستيقاظ",
         text: [
@@ -668,7 +599,6 @@
           {text: "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ.", count: 1}
         ]
       },
-
       baad_salat: {
         title: "أذكار بعد الصلاة",
         text: [
@@ -684,12 +614,11 @@
           {text: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ.", count: 1}
         ]
       },
-
       tasabih: {
         title: "التسابيح (أذكار الصباح والمساء والنوافل)",
         text: [
           {text: "سُبْحَانَ اللَّهِ (33 مرة)، الْحَمْدُ لِلَّهِ (33 مرة)، اللَّهُ أَكْبَرُ (34 مرة).", count: 1},
-          {text: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُbْحَانَ اللَّهِ الْعَظِيمِ.", count: 100},
+          {text: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ.", count: 100},
           {text: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.", count: 100},
           {text: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ.", count: 100},
           {text: "حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ.", count: 7},
@@ -698,7 +627,6 @@
           {text: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ.", count: 10}
         ]
       },
-
       doaa: {
         title: "جوامع الدعاء",
         text: [
@@ -711,7 +639,6 @@
           {text: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا، إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ.", count: 1}
         ]
       },
-
       salat: {
         title: "أذكار الصلاة",
         text: [
@@ -723,7 +650,6 @@
           {text: "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.", count: 1}
         ]
       },
-
       quran: {
         title: "الأدعية القرآنية",
         text: [
@@ -736,7 +662,6 @@
           {text: "رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَل لِّي مِن لَّدُنكَ سُلْطَانًا نَّصِيرًا. (الإسراء: 80)", count: 1}
         ]
       },
-
       nabawi: {
         title: "أدعية نبوية",
         text: [
@@ -748,19 +673,17 @@
           {text: "اللَّهُمَّ طَهِّرْ قَلْبِي مِنَ النِّفَاقِ، وَعَمَلِي مِنَ الرِّيَاءِ، وَلِسَانِي مِنَ الْكَذِبِ، وَعَيْنِي مِنَ الْخِيَانَةِ، إِنَّكَ تَعْلَمُ خَائِنَةَ الْأَعْيُنِ وَمَا تُخْفِي الصُّدُورُ.", count: 1}
         ]
       },
-
       mutfarqa: {
         title: "أذكار متفرقة",
         text: [
           {text: "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا.", count: 1},
           {text: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا خَلَقْتَ.", count: 1},
           {text: "لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ.", count: 100},
-          {text: "اللَّهُمَّ اغْfِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ.", count: 1},
+          {text: "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ.", count: 1},
           {text: "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ خَيْرِ مَا سَأَلَكَ مِنْهُ عِبَادُكَ الصَّالِحُونَ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا اسْتَعَاذَ مِنْهُ عِبَادُكَ الصَّالِحُونَ.", count: 1},
           {text: "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ.", count: 3}
         ]
       },
-
       anbiya: {
         title: "أدعية الأنبياء",
         text: [
@@ -772,7 +695,6 @@
           {text: "حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ. (نوح عليه السلام)", count: 7}
         ]
       },
-
       masjid: {
         title: "أذكار المسجد",
         text: [
@@ -783,7 +705,6 @@
           {text: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.", count: 10}
         ]
       },
-
       athan: {
         title: "أذكار الآذان",
         text: [
@@ -794,7 +715,6 @@
           {text: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ.", count: 10}
         ]
       },
-
       manzel: {
         title: "أذكار المنزل",
         text: [
@@ -805,7 +725,6 @@
           {text: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.", count: 10}
         ]
       },
-
       wudu: {
         title: "أذكار الوضوء",
         text: [
@@ -816,7 +735,6 @@
           {text: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.", count: 1}
         ]
       },
-
       ta3am: {
         title: "أذكار الطعام",
         text: [
@@ -827,7 +745,6 @@
           {text: "اللَّهُمَّ أَطْعِمْ مَنْ أَطْعَمَنِي، وَاسْقِ مَنْ سَقَانِي.", count: 1}
         ]
       },
-
       khala: {
         title: "أذكار الخلاء",
         text: [
@@ -838,7 +755,6 @@
           {text: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.", count: 1}
         ]
       },
-
       safar: {
         title: "أذكار السفر",
         text: [
@@ -849,7 +765,6 @@
           {text: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ.", count: 1}
         ]
       },
-
       roya: {
         title: "أذكار الرؤيا",
         text: [
@@ -860,7 +775,6 @@
           {text: "لَا يُعَبِّرُ الرُّؤْيَا إِلَّا عَالِمٌ أَوْ نَاصِحٌ أَوْ حَبِيبٌ.", count: 1}
         ]
       },
-
       khatm: {
         title: "أذكار ختم القرآن",
         text: [
@@ -871,7 +785,6 @@
           {text: "اللَّهُمَّ اجْعَلْنِي مِنْ أَهْلِ الْقُرْآنِ الَّذِينَ هُمْ أَهْلُكَ وَخَاصَّتُكَ.", count: 1}
         ]
       },
-
       istikhara: {
         title: "دعاء الاستخارة",
         text: [
@@ -880,7 +793,6 @@
           {text: "وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي، فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ، وَاقْدُرْ لِي الْخَيْرَ حَيْثُ كَانَ، ثُمَّ أَرْضِنِي بِهِ.", count: 1}
         ]
       },
-
       qunoot: {
         title: "دعاء القنوت",
         text: [
@@ -889,7 +801,6 @@
           {text: "اللَّهُمَّ إِيَّاكَ نَعْبُدُ، وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَى وَنَحْفِدُ، نَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ.", count: 1}
         ]
       },
-
       istisqa: {
         title: "دعاء الاستسقاء",
         text: [
@@ -897,15 +808,13 @@
           {text: "اللَّهُمَّ اسْقِ عِبَادَكَ وَبَهَائِمَكَ، وَانْشُرْ رَحْمَتَكَ، وَأَحْيِ بَلَدَكَ الْمَيِّتَ.", count: 1},
           {text: "اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا، اللَّهُمَّ أَغِثْنَا.", count: 3},
           {text: "اللَّهُمَّ اسْقِنَا مِنْ بَرَكَاتِ السَّمَاءِ، وَأَنْبِتْ لَنَا مِنْ بَرَكَاتِ الْأَرْضِ، وَاكْشِفْ عَنَّا مِنَ الْبَلَاءِ مَا لَا يَكْشِفُهُ غَيْرُكَ.", count: 1},
-          {text: "اللَّهُمَّ إِنَّ بِالْعِبَادِ وَالْبِلَادِ مِنَ اللَّأْوَاءِ وَالْجَهْدِ وَالضَّنَكِ مَا لَا نَشْكُوهُ إِلَّا إِلَيْكَ.", count: 1}
+          {text: "اللَّهُمَّ إِنَّ بِالْعِبَادِ وَالْبِلَادِ مِنَ اللَّأْوَاءِ وَالْجَهْدِ وَالْضَّنَكِ مَا لَا نَشْكُوهُ إِلَّا إِلَيْكَ.", count: 1}
         ]
       }
     };
-
     // تهيئة العدادات من localStorage
     let counters = JSON.parse(localStorage.getItem('azkarCounters')) || {};
     let azkarIndividualCounters = JSON.parse(localStorage.getItem('azkarIndividualCounters')) || {};
-    
     // إخفاء واجهة الترحيب
     document.getElementById('start-btn').addEventListener('click', function() {
       document.getElementById('welcome-screen').style.transform = 'translateY(-100%)';
@@ -914,7 +823,6 @@
         document.getElementById('welcome-screen').style.display = 'none';
       }, 800);
     });
-    
     // تحديث العلامات على البطاقات
     function updateBadges() {
       Object.keys(counters).forEach(key => {
@@ -924,96 +832,90 @@
         }
       });
     }
-    
+
+    // === الدالة الجديدة لربط أزرار القراءة ===
+    function attachIncreaseButtonListeners() {
+      document.querySelectorAll('.increase-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const itemId = this.getAttribute('data-item');
+          const requiredCount = parseInt(this.getAttribute('data-required'));
+          const azkarItem = this.closest('.azkar-item');
+          const completionMessage = azkarItem.querySelector('.completion-message');
+          if (!azkarIndividualCounters[itemId]) {
+            azkarIndividualCounters[itemId] = 0;
+          }
+          azkarIndividualCounters[itemId]++;
+          const key = itemId.split('-')[0];
+          if (!counters[key]) {
+            counters[key] = 0;
+          }
+          counters[key]++;
+          localStorage.setItem('azkarCounters', JSON.stringify(counters));
+          localStorage.setItem('azkarIndividualCounters', JSON.stringify(azkarIndividualCounters));
+          updateBadges();
+          if (azkarIndividualCounters[itemId] >= requiredCount) {
+            this.style.display = 'none';
+            const counterDisplay = document.createElement('div');
+            counterDisplay.className = 'counter-display';
+            counterDisplay.textContent = `أكملت ${requiredCount} مرة`;
+            azkarItem.querySelector('.azkar-counter').appendChild(counterDisplay);
+            completionMessage.style.opacity = '1';
+          } else {
+            this.textContent = `قرأت هذا الذكر (${azkarIndividualCounters[itemId]}/${requiredCount})`;
+            completionMessage.style.opacity = '1';
+            setTimeout(() => {
+              if (azkarIndividualCounters[itemId] < requiredCount) {
+                completionMessage.style.opacity = '0';
+              }
+            }, 2000);
+          }
+        });
+      });
+    }
+
     // تحديث العداد عند النقر على بطاقة
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('click', () => {
         const key = card.getAttribute('data-azkar');
         const data = azkarData[key];
         if (data) {
-          // عرض المحتوى
           document.getElementById('azkar-title').textContent = data.title;
-          
-          // إنشاء العناصر لكل ذكر
           const azkarTextContainer = document.getElementById('azkar-text');
           azkarTextContainer.innerHTML = '';
-          
           data.text.forEach((item, index) => {
             const itemId = `${key}-${index}`;
-            const count = azkarIndividualCounters[itemId] || 0;
+            const currentCount = azkarIndividualCounters[itemId] || 0;
             const requiredCount = item.count || 1;
-            
+            const isCompleted = currentCount >= requiredCount;
             const azkarItem = document.createElement('div');
             azkarItem.className = 'azkar-item';
-            azkarItem.innerHTML = `
+            let azkarItemHTML = `
               <div>${item.text}</div>
               <div class="repeat-counter">
-                <span class="repeat-label">عدد المرات المطلوبة:</span>
-                <input type="number" class="repeat-input" value="${requiredCount}" min="1" max="100">
+                <span class="repeat-label">عدد المرات المطلوبة: ${requiredCount}</span>
               </div>
               <div class="azkar-counter">
-                <button class="increase-btn" data-item="${itemId}">قرأت هذا الذكر</button>
-              </div>
-              <div class="completion-message">✓ تمت القراءة</div>
             `;
+            if (isCompleted) {
+              azkarItemHTML += `
+                <div class="counter-display">أكملت ${requiredCount} مرة</div>
+              `;
+            } else {
+              azkarItemHTML += `
+                <button class="increase-btn" data-item="${itemId}" data-required="${requiredCount}">قرأت هذا الذكر (${currentCount}/${requiredCount})</button>
+              `;
+            }
+            azkarItemHTML += `
+              </div>
+              <div class="completion-message" style="opacity: ${isCompleted ? '1' : '0'};">✓ تمت القراءة</div>
+            `;
+            azkarItem.innerHTML = azkarItemHTML;
             azkarTextContainer.appendChild(azkarItem);
           });
-          
-          // إضافة مستمعي الأحداث للأزرار الجديدة
-          document.querySelectorAll('.increase-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-              const itemId = this.getAttribute('data-item');
-              const azkarItem = this.closest('.azkar-item');
-              const repeatInput = azkarItem.querySelector('.repeat-input');
-              const requiredCount = parseInt(repeatInput.value) || 1;
-              const completionMessage = azkarItem.querySelector('.completion-message');
-              
-              if (!azkarIndividualCounters[itemId]) {
-                azkarIndividualCounters[itemId] = 0;
-              }
-              
-              // زيادة العداد
-              azkarIndividualCounters[itemId]++;
-              
-              // تحديث العداد الإجمالي للقسم
-              const key = itemId.split('-')[0];
-              if (!counters[key]) {
-                counters[key] = 0;
-              }
-              counters[key]++;
-              
-              // حفظ في localStorage
-              localStorage.setItem('azkarCounters', JSON.stringify(counters));
-              localStorage.setItem('azkarIndividualCounters', JSON.stringify(azkarIndividualCounters));
-              
-              // تحديث العرض
-              updateBadges();
-              
-              // إظهار رسالة التأكيد
-              completionMessage.style.opacity = '1';
-              
-              // إخفاء الرسالة بعد ثانيتين
-              setTimeout(() => {
-                completionMessage.style.opacity = '0';
-              }, 2000);
-              
-              // إخفاء الزر مؤقتًا لتجنب النقر المتكرر
-              this.disabled = true;
-              setTimeout(() => {
-                this.disabled = false;
-              }, 500);
-              
-              // إذا وصلنا إلى العدد المطلوب، إخفاء الزر
-              if (azkarIndividualCounters[itemId] >= requiredCount) {
-                this.style.display = 'none';
-                const counterDisplay = document.createElement('div');
-                counterDisplay.className = 'counter-display';
-                counterDisplay.textContent = `أكملت ${requiredCount} مرة`;
-                azkarItem.querySelector('.azkar-counter').appendChild(counterDisplay);
-              }
-            });
-          });
-          
+
+          // === استدعاء الدالة هنا بعد إنشاء الأزرار ===
+          attachIncreaseButtonListeners();
+
           document.getElementById('cards-grid').style.display = 'none';
           document.getElementById('azkar-content').style.display = 'block';
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1029,12 +931,11 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // زر التمرير للأعلى
+    // باقي الأحداث كما هي
     const scrollToTop = document.querySelector('.scroll-to-top');
     scrollToTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
         scrollToTop.style.opacity = '1';
@@ -1044,16 +945,10 @@
         scrollToTop.style.pointerEvents = 'none';
       }
     });
-
-    // زر "عرف كام قرات"
     document.getElementById('counter-btn').addEventListener('click', () => {
       const modal = document.getElementById('counter-modal');
       const list = document.getElementById('counter-list');
-      
-      // تفريغ القائمة
       list.innerHTML = '';
-      
-      // إضافة العناصر إلى القائمة
       Object.keys(counters).forEach(key => {
         if (counters[key] > 0) {
           const item = document.createElement('div');
@@ -1065,30 +960,20 @@
           list.appendChild(item);
         }
       });
-      
-      // إذا لم تكن هناك عدادات
       if (list.children.length === 0) {
         list.innerHTML = '<div class="counter-item">لم تقرأ أي أذكار بعد</div>';
       }
-      
-      // عرض النافذة
       modal.style.display = 'flex';
     });
-
-    // إغلاق نافذة العداد
     document.getElementById('close-counter').addEventListener('click', () => {
       document.getElementById('counter-modal').style.display = 'none';
     });
-
-    // إغلاق النافذة عند النقر خارجها
     window.addEventListener('click', (e) => {
       const modal = document.getElementById('counter-modal');
       if (e.target === modal) {
         modal.style.display = 'none';
       }
     });
-
-    // تهيئة العلامات عند تحميل الصفحة
     updateBadges();
   </script>
 </body>
